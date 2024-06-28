@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+// font
+$font: "Outfit", sans-serif;
+// colors
+$black: #090909;
+$white: #f4f3ee;
+$yellow: #f5cb5c;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    a {
+        color: $white;
+        text-decoration: none;
+    }
+
+    header {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        transition: opacity 0.3s ease;
+    }
+
+    body {
+        background: $black;
+        font-family: $font;
+        color: $white;
+    }
+
+}
