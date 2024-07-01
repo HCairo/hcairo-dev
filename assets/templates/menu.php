@@ -6,6 +6,7 @@
             <a href="exp">Experiences</a>
             <a href="skills">Skills</a>
             <a href="contact">Contact</a>
+            <a href="auth">Authentification</a>
         </nav>
     </div>
 </header>

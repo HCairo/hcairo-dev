@@ -15,7 +15,7 @@
   transition: opacity 0.3s ease;
 }
 * body {
-  background: #090909;
+  background: #1E1E24;
   font-family: "Outfit", sans-serif;
   color: #f4f3ee;
 }
@@ -40,7 +40,7 @@
   transition: color 1s ease;
 }
 #menu-container #logo:hover {
-  color: #f5cb5c;
+  color: #9368B7;
 }
 #menu-container #menu-bar {
   display: flex;
@@ -54,7 +54,7 @@
   transition: color 0.3s ease;
 }
 #menu-container #menu-bar a:hover {
-  color: #f5cb5c;
+  color: #9368B7;
 }
 
 #speech {
@@ -73,9 +73,9 @@
   display: inline-block;
   margin: 20px 0;
   padding: 20px;
-  background: #f5cb5c;
+  background: #9368B7;
   border-radius: 8px;
-  color: #090909;
+  color: #1E1E24;
 }
 
 #speech-span {
@@ -117,9 +117,9 @@
   display: inline-block;
   margin-top: 20px;
   padding: 10px 20px;
-  background: #f5cb5c;
+  background: #9368B7;
   border-radius: 8px;
-  color: #090909;
+  color: #1E1E24;
   text-decoration: none;
 }
 
@@ -137,9 +137,9 @@
   width: fit-content;
   padding: 10px 20px;
   margin: 40px auto;
-  background: #f5cb5c;
+  background: #9368B7;
   border-radius: 8px;
-  color: #090909;
+  color: #1E1E24;
   text-decoration: none;
   text-align: center;
 }
@@ -156,8 +156,60 @@
   margin-bottom: 20px;
 }
 
+.contact-form-container {
+  width: 40%;
+  margin: 50px auto;
+  padding: 20px;
+  text-align: center;
+}
+.contact-form-container h1 {
+  margin-bottom: 20px;
+  color: #f4f3ee;
+}
+.contact-form-container .contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+.contact-form-container .contact-form .form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+.contact-form-container .contact-form .form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #f4f3ee;
+}
+.contact-form-container .contact-form .form-group input, .contact-form-container .contact-form .form-group select {
+  width: 100%;
+  padding: 10px;
+  background: #f4f3ee;
+  border: 5px solid #f4f3ee;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+.contact-form-container .contact-form .form-group input:focus, .contact-form-container .contact-form .form-group select:focus {
+  border-color: #9368B7;
+  outline: none;
+}
+.contact-form-container .contact-form button {
+  padding: 10px 20px;
+  background: #9368B7;
+  color: #f4f3ee;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.contact-form-container .contact-form button:hover {
+  background: #7a4ca0;
+}
+
 .footer-container {
-  background-color: #090909;
+  background-color: #1E1E24;
   color: #f4f3ee;
   padding: 20px 0;
   text-align: center;
@@ -183,7 +235,7 @@
   margin: 10px 0;
 }
 .footer-container .footer-content .footer-section h3 {
-  color: #f5cb5c;
+  color: #9368B7;
   margin-bottom: 15px;
 }
 .footer-container .footer-content .footer-section a {
@@ -194,8 +246,90 @@
   transition: color 0.3s;
 }
 .footer-container .footer-content .footer-section a:hover {
-  color: #f5cb5c;
+  color: #9368B7;
 }
 .footer-container .footer-content .footer-section p {
   margin: 5px 0;
+}
+
+.login-form-container {
+  width: 40%;
+  margin: 50px auto;
+  padding: 20px;
+  text-align: center;
+  background-color: #1E1E24;
+  border-radius: 8px;
+}
+.login-form-container h1 {
+  margin-bottom: 20px;
+  color: #f4f3ee;
+}
+.login-form-container .login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+.login-form-container .login-form .form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+.login-form-container .login-form .form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #f4f3ee;
+}
+.login-form-container .login-form .form-group input[type=email],
+.login-form-container .login-form .form-group input[type=password] {
+  width: 100%;
+  padding: 10px;
+  background: #f4f3ee;
+  border: 5px solid #f4f3ee;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+.login-form-container .login-form .form-group input[type=email]:focus,
+.login-form-container .login-form .form-group input[type=password]:focus {
+  border-color: #9368B7;
+  outline: none;
+}
+.login-form-container .login-form button {
+  padding: 10px 20px;
+  background: #9368B7;
+  color: #f4f3ee;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.login-form-container .login-form button:hover {
+  background: #7a4ca0;
+}
+
+#dashboard-container {
+  width: 80%; /* Adjust width as needed */
+  margin: auto; /* Center horizontally */
+  margin-top: 100px;
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column; /* Align items vertically */
+  padding: 40px 0;
+}
+#dashboard-container #menu-bar {
+  display: flex;
+  justify-content: flex-end;
+}
+#dashboard-container #menu-bar a {
+  padding: 8px;
+  font-weight: 400;
+  font-size: 18px;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+#dashboard-container #menu-bar a:hover {
+  color: #9368B7;
 }/*# sourceMappingURL=style.css.map */

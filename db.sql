@@ -10,8 +10,7 @@ USE hcairodev;
 CREATE TABLE admin (
     id INT PRIMARY KEY AUTO_INCREMENT,
     mail VARCHAR(255) NOT NULL,
-    token VARCHAR(255),
-    token_expires_at DATETIME
+    secret TEXT NOT NULL;
 );
 
 /* Structure de la table contact */
@@ -22,6 +21,7 @@ CREATE TABLE contact (
     lastname VARCHAR(80) NOT NULL,
     mail VARCHAR(180) NOT NULL,
     phone VARCHAR(25) NOT NULL,
+    subject ENUM('Collaboration', 'General Inquiry', 'Feedback', 'Support', 'Other'),
     sent DATETIME DEFAULT CURRENT_TIMESTAMP,
     received ENUM('NO', 'YES') DEFAULT 'NO'
 );
@@ -60,7 +60,7 @@ CREATE TABLE projects (
 
 /* Remplissage de la table admin */
 
-INSERT INTO admin (mail) VALUES ('hcairo@dev');
+INSERT INTO admin (mail, secret) VALUES ('hcairo@dev', '$argon2i$v=19$m=16,t=2,p=1$a3d6NmFsbXlkSjhVZW5LeA$eEXalSjPb6zanT3/WhgHTw');
 
 /* Remplissage de la table contact */
 
@@ -70,6 +70,12 @@ INSERT INTO contact (firstname, lastname, mail, phone) VALUES ('Joe', 'Mister', 
 
 /* Remplissage de la table experiences */
 
-INSERT INTO experiences (company, role, description, start_date, end_date) VALUES ('Apple', 'DevOps', 'IDK', '2023-04-29', '2024-01-18');
+INSERT INTO `experiences` (`id`, `company`, `img_url`, `role`, `description`, `start_date`, `end_date`) VALUES
+(1, 'Hopitaux de Lyon - Edouard Herriot', './assets/img/experiences/hcl.png', 'Developer', 'Development of a chatbot designed to assist Level 1 IT support by answering common questions. If the chatbot cannot answer a question, it will automatically transfer it to a human agent for further assistance.', '2023-09-03', '2024-10-31');
 
 /* Remplissage de la table projects */
+
+INSERT INTO `projects` (`id`, `name`, `img_url`, `description`, `technology`, `link`) VALUES
+(1, 'NowTes', './assets/img/projects/icon.png', 'Note-taking and task management application.\r\n\r\nDeveloped as part of my Web & Mobile Developer training for my certification.', 'PHP, MYSQL, JS, SCSS, ...', 'http://localhost/project-nowtes'),
+(2, 'Eshop - CCI', './assets/img/projects/eshop.png', 'Eshop project created during courses at the CCI Nord Isère.\r\nIntroduction to the MVC model in vanilla PHP.', 'PHP, JS, SCSS', 'http://localhost/E-Commerce-MVC'),
+(3, 'ASCII Converter', './assets/img/projects/asciilogo.png', 'Image to ASCII conversion application.\r\nFirst project in Python.', 'Python, Ext. Python, HTML, CSS.', '#');

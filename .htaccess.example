@@ -1,0 +1,13 @@
+RewriteEngine On
+
+# Avoid rewriting if a file or directory exists with the same name
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Redirect to specific actions
+RewriteRule ^projects$ index.php?action=projects [L,QSA]
+RewriteRule ^exp$ index.php?action=exp [L,QSA]
+RewriteRule ^skills$ index.php?action=skills [L,QSA]
+RewriteRule ^contact$ index.php?action=contact [L,QSA]
+RewriteRule ^auth$ index.php?action=auth [L,QSA]
+RewriteRule ^dashboard$ index.php?action=dashboard [L,QSA]

@@ -9,7 +9,7 @@
         </div>
         <div class="footer-section">
             <h3>Follow Me</h3>
-            <a href="https://twitter.com/duraygue" target="_blank">Twitter</a>
+            <a href="https://twitter.com/HCairo" target="_blank">Twitter / X</a>
             <a href="https://linkedin.com/in/hugocairo" target="_blank">LinkedIn</a>
             <a href="https://github.com/HCairo" target="_blank">GitHub</a>
         </div>

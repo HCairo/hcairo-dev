@@ -8,6 +8,7 @@ use Controllers\SkillsController;
 use Controllers\ExpController;
 use Controllers\ContactController;
 use Controllers\ProjectsController;
+use Controllers\DashboardController;
 
 // Load environment variables from .env file
 $dotenv = Dotenv::createImmutable(__DIR__);
@@ -34,10 +35,19 @@ switch ($action) {
         break;
     case 'contact':
         $controller = new ContactController();
-        // Call appropriate method in ContactController
+        $controller->getContact();
         break;
     case 'auth':
         // Handle authentication actions
         $controller = new AuthController();
+        $controller->authenticate();
+        break;
+    case 'dashboard':
+        $controller = new DashboardController();
+        $controller->dashboardManagement();
+        break;
+    case 'logout':
+        $controller = new DashboardController();
+        $controller->logout();
         break;
 }
