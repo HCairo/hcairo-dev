@@ -152,6 +152,46 @@
     }
 }
 
+// SKILLS
+.skill-container {
+    width: 30%;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .skill-icon {
+        width: 30%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    
+    .skill-details {
+        width: 100%;
+
+        h2 {
+            margin: 10px 0;
+            font-size: 30px;
+            color: $white;
+        }
+        
+        p {
+            margin: 5px 0;
+            font-size: 16px;
+            color: $white;
+        }
+    }
+}
+
+.skill-span {
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+    height: 1.5px;
+    background: $white;
+}
 
 // CONTACT
 .contact-form-container {
@@ -333,15 +373,16 @@
 
 // DASHBOARD
 #dashboard-container {
-    width: 80%; /* Adjust width as needed */
+    width: 50%; /* Adjust width as needed */
     margin: auto; /* Center horizontally */
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top: 220px;
+    margin-bottom: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: column; /* Align items vertically */
-    padding: 40px 0;
+    padding: 20px 0;
+    background: $purple;
 
     #menu-bar {
         display: flex;
@@ -356,7 +397,7 @@
         }
 
         a:hover {
-            color: $purple;
+            color: $black;
         }
     }
 }
@@ -377,7 +418,7 @@
     }
 
     td {
-        border: 3px solid $white;
+        border: 3px solid $purple;
         padding: 8px;
         text-align: center;
 
@@ -397,5 +438,57 @@
     
     .dash-table tr:hover {
         background-color: $purple;
+    }
+}
+
+// DASHBOARD FORM
+.dash-form {
+    max-width: 50%;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    padding: 20px;
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    input[type="text"],input[type="url"],
+    input[type="date"],.textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: 5px solid $white;
+    border-radius: 4px;
+    background: $white;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+    color: $black;
+
+    &:focus {
+        border-color: $purple;
+        outline: none;
+    }
+    }
+
+    button {
+        width: 100%;
+        padding: 10px;
+        background-color: $purple;
+        border: none;
+        border-radius: 4px;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: darken($purple, 10%);
     }
 }

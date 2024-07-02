@@ -12,10 +12,6 @@ RewriteRule ^contact$ index.php?action=contact [L,QSA]
 RewriteRule ^auth$ index.php?action=auth [L,QSA]
 # DASHBOARD
 RewriteRule ^dashboard$ index.php?action=dashboard [L,QSA]
-RewriteRule ^dashboard/projects$ index.php?action=dash_projects [QSA,L]
-RewriteRule ^dashboard/exp$ index.php?action=dash_exp [QSA,L]
-RewriteRule ^dashboard/skills$ index.php?action=dash_skills [QSA,L]
-RewriteRule ^dashboard/contact$ index.php?action=dash_contact [QSA,L]
 
 # Prevent directory listing
 Options -Indexes

@@ -31,7 +31,7 @@ switch ($action) {
         break;
     case 'skills':
         $controller = new SkillsController();
-        // Call appropriate method in SkillsController
+        $controller->displaySkills();
         break;
     case 'contact':
         $controller = new ContactController();

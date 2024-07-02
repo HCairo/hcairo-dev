@@ -156,6 +156,42 @@
   margin-bottom: 20px;
 }
 
+.skill-container {
+  width: 30%;
+  margin: 20px auto;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.skill-container .skill-icon {
+  width: 30%;
+  height: auto;
+  margin-bottom: 20px;
+}
+.skill-container .skill-details {
+  width: 100%;
+}
+.skill-container .skill-details h2 {
+  margin: 10px 0;
+  font-size: 30px;
+  color: #f4f3ee;
+}
+.skill-container .skill-details p {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #f4f3ee;
+}
+
+.skill-span {
+  display: block;
+  width: 60%;
+  margin: 0 auto;
+  height: 1.5px;
+  background: #f4f3ee;
+}
+
 .contact-form-container {
   width: 40%;
   margin: 50px auto;
@@ -309,15 +345,16 @@
 }
 
 #dashboard-container {
-  width: 80%; /* Adjust width as needed */
+  width: 50%; /* Adjust width as needed */
   margin: auto; /* Center horizontally */
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin-top: 220px;
+  margin-bottom: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: column; /* Align items vertically */
-  padding: 40px 0;
+  padding: 20px 0;
+  background: #9368B7;
 }
 #dashboard-container #menu-bar {
   display: flex;
@@ -331,7 +368,7 @@
   transition: color 0.3s ease;
 }
 #dashboard-container #menu-bar a:hover {
-  color: #9368B7;
+  color: #1E1E24;
 }
 
 .dash-table {
@@ -348,7 +385,7 @@
   color: #1E1E24;
 }
 .dash-table td {
-  border: 3px solid #f4f3ee;
+  border: 3px solid #9368B7;
   padding: 8px;
   text-align: center;
 }
@@ -364,4 +401,50 @@
 }
 .dash-table .dash-table tr:hover {
   background-color: #9368B7;
+}
+
+.dash-form {
+  max-width: 50%;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  padding: 20px;
+}
+.dash-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.dash-form .form-group {
+  margin-bottom: 15px;
+}
+.dash-form input[type=text], .dash-form input[type=url],
+.dash-form input[type=date], .dash-form .textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: 5px solid #f4f3ee;
+  border-radius: 4px;
+  background: #f4f3ee;
+  box-sizing: border-box;
+  transition: border-color 0.3s;
+  color: #1E1E24;
+}
+.dash-form input[type=text]:focus, .dash-form input[type=url]:focus,
+.dash-form input[type=date]:focus, .dash-form .textarea:focus {
+  border-color: #9368B7;
+  outline: none;
+}
+.dash-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #9368B7;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+.dash-form button:hover {
+  background-color: #7a4ca0;
 }/*# sourceMappingURL=style.css.map */
