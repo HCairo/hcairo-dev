@@ -46,8 +46,4 @@ switch ($action) {
         $controller = new DashboardController();
         $controller->dashboardManagement();
         break;
-    case 'logout':
-        $controller = new DashboardController();
-        $controller->logout();
-        break;
 }

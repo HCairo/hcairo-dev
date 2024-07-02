@@ -360,3 +360,42 @@
         }
     }
 }
+
+// DASHBOARD TABLE
+.dash-table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    margin-top: 30px;
+
+    th {
+        border: 3px solid $purple;
+        padding: 8px;
+        text-align: center;
+        background-color: $purple;
+        color: $black;
+    }
+
+    td {
+        border: 3px solid $white;
+        padding: 8px;
+        text-align: center;
+
+        .dash-table a {
+            color: $purple;
+            text-decoration: none;
+        }
+        
+        .dash-table a:hover {
+            text-decoration: underline;
+        }
+    }
+
+    .dash-table tr:nth-child(even) {
+        background-color: $purple;
+    }
+    
+    .dash-table tr:hover {
+        background-color: $purple;
+    }
+}

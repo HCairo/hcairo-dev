@@ -22,9 +22,9 @@ class DashboardController {
             exit();
         }
 
-        $action = $_REQUEST['action'] ?? null;
+        $sub = $_REQUEST['sub'] ?? null;
 
-        switch ($action) {
+        switch ($sub) {
             default:
                 $this->dashView->dashboardMenu();
                 break;
