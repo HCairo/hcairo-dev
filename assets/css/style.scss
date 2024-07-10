@@ -25,6 +25,10 @@
         color: $purple;
     }
 
+    .burger-menu {
+        display: none;
+    }
+
     #menu-bar {
         display: flex;
         justify-content: flex-end;
@@ -490,5 +494,289 @@
 
     button:hover {
         background-color: darken($purple, 10%);
+    }
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+    height: 150px;
+    width: 100%;
+}
+
+// Media Queries
+@media (max-width: 768px) {
+    #menu-container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 0;
+        width: 100%;
+
+        #logo {
+            font-size: 24px;
+            margin: 20px;
+        }
+
+        #menu-bar {
+            display: none;
+            flex-direction: column;
+            align-items: center;
+
+            a {
+                font-size: 16px;
+                padding: 10px 0;
+            }
+        }
+
+        .burger-menu {
+            display: block;
+            cursor: pointer;
+            font-size: 24px;
+            margin: 20px;
+        }
+
+        .burger-menu.active + #menu-bar {
+            display: flex;
+            position: absolute;
+            top: 60px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: $black;
+            width: 80%;
+            border-radius: 8px;
+            padding: 10px 0;
+        }
+    }
+
+    #speech {
+        width: 90%;
+        padding: 20px;
+
+        h1 {
+            font-size: 32px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        #contact-home {
+            padding: 15px;
+            font-size: 18px;
+        }
+    }
+
+    .project-container, .experiences-container, .skill-container {
+        width: 90%;
+        margin: 10px auto;
+        padding: 10px;
+
+        .project-icon, .experiences-icon, .skill-icon {
+            width: 50%;
+        }
+
+        .project-details, .skill-details {
+            h2 {
+                font-size: 24px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+        }
+
+        .project-link {
+            padding: 8px 16px;
+            font-size: 14px;
+        }
+    }
+
+    .project-span, .skill-span {
+        width: 90%;
+    }
+
+    .more-project {
+        width: 90%;
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+
+    .contact-form-container, .login-form-container {
+        width: 90%;
+        margin: 20px auto;
+        padding: 10px;
+
+        .contact-form, .login-form {
+            .form-group {
+                label {
+                    font-size: 14px;
+                }
+
+                input, select {
+                    padding: 8px;
+                    font-size: 14px;
+                }
+            }
+
+            button {
+                padding: 8px 16px;
+                font-size: 14px;
+            }
+        }
+    }
+
+    #dashboard-container {
+        width: 90%;
+        margin-top: 100px;
+        padding: 10px;
+
+        #menu-bar {
+            a {
+                padding: 6px;
+                font-size: 16px;
+            }
+        }
+    }
+
+    .dash-table {
+        width: 100%;
+
+        th, td {
+            padding: 4px;
+            font-size: 14px;
+        }
+    }
+
+    .dash-form {
+        width: 90%;
+        padding: 10px;
+
+        input, .textarea {
+            padding: 8px;
+            font-size: 14px;
+        }
+
+        button {
+            padding: 8px;
+            font-size: 14px;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    #menu-container {
+        padding: 10px 0;
+
+        #logo {
+            font-size: 20px;
+        }
+
+        #menu-bar a {
+            font-size: 14px;
+        }
+    }
+
+    #speech {
+        width: 100%;
+        padding: 10px;
+
+        h1 {
+            font-size: 24px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+
+        #contact-home {
+            padding: 10px;
+            font-size: 16px;
+        }
+    }
+
+    .project-container, .experiences-container, .skill-container {
+        width: 100%;
+        padding: 10px;
+
+        .project-icon, .experiences-icon, .skill-icon {
+            width: 60%;
+        }
+
+        .project-details, .skill-details {
+            h2 {
+                font-size: 20px;
+            }
+
+            p {
+                font-size: 12px;
+            }
+        }
+
+        .project-link {
+            padding: 6px 12px;
+            font-size: 12px;
+        }
+    }
+
+    .more-project {
+        width: 100%;
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+
+    .contact-form-container, .login-form-container {
+        width: 100%;
+        padding: 10px;
+
+        .contact-form, .login-form {
+            .form-group {
+                label {
+                    font-size: 12px;
+                }
+
+                input, select {
+                    padding: 6px;
+                    font-size: 12px;
+                }
+            }
+
+            button {
+                padding: 6px 12px;
+                font-size: 12px;
+            }
+        }
+    }
+
+    #dashboard-container {
+        width: 100%;
+        padding: 10px;
+
+        #menu-bar a {
+            padding: 4px;
+            font-size: 14px;
+        }
+    }
+
+    .dash-table {
+        th, td {
+            padding: 2px;
+            font-size: 12px;
+        }
+    }
+
+    .dash-form {
+        width: 100%;
+        padding: 10px;
+
+        input, .textarea {
+            padding: 6px;
+            font-size: 12px;
+        }
+
+        button {
+            padding: 6px;
+            font-size: 12px;
+        }
     }
 }

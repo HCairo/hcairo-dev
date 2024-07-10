@@ -1,10 +1,12 @@
-RewriteEngine On
+RewriteEngine On  # Active le moteur de réécriture
 
 # Avoid rewriting if a file or directory exists with the same name
+# Évite la réécriture si un fichier ou un répertoire existe avec le même nom
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 
 # Redirect to specific actions
+# Redirection vers des actions spécifiques
 RewriteRule ^projects$ index.php?action=projects [L,QSA]
 RewriteRule ^exp$ index.php?action=exp [L,QSA]
 RewriteRule ^skills$ index.php?action=skills [L,QSA]
@@ -14,23 +16,28 @@ RewriteRule ^auth$ index.php?action=auth [L,QSA]
 RewriteRule ^dashboard$ index.php?action=dashboard [L,QSA]
 
 # Prevent directory listing
+# Empêche la liste des répertoires
 Options -Indexes
 
 # Deny access to .htaccess itself
+# Interdit l'accès à .htaccess lui-même
 <Files .htaccess>
     Require all denied
 </Files>
 
 # Deny access to sensitive files
+# Interdit l'accès aux fichiers sensibles
 <FilesMatch "\.(ini|log|sh|sql|bak|config)$">
     Require all denied
 </FilesMatch>
 
 # Protect against XSS by setting proper headers
+# Protège contre XSS en définissant les en-têtes appropriés
 Header set X-XSS-Protection "1; mode=block"
 Header set X-Content-Type-Options "nosniff"
 
 # Block access to all files starting with a dot (hidden files)
+# Bloque l'accès à tous les fichiers commençant par un point (fichiers cachés)
 <FilesMatch "^\.">
     Require all denied
 </FilesMatch>

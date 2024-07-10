@@ -42,6 +42,9 @@
 #menu-container #logo:hover {
   color: #9368B7;
 }
+#menu-container .burger-menu {
+  display: none;
+}
 #menu-container #menu-bar {
   display: flex;
   justify-content: flex-end;
@@ -447,4 +450,221 @@
 }
 .dash-form button:hover {
   background-color: #7a4ca0;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+  height: 150px;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  #menu-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    width: 100%;
+  }
+  #menu-container #logo {
+    font-size: 24px;
+    margin: 20px;
+  }
+  #menu-container #menu-bar {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+  }
+  #menu-container #menu-bar a {
+    font-size: 16px;
+    padding: 10px 0;
+  }
+  #menu-container .burger-menu {
+    display: block;
+    cursor: pointer;
+    font-size: 24px;
+    margin: 20px;
+  }
+  #menu-container .burger-menu.active + #menu-bar {
+    display: flex;
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #1E1E24;
+    width: 80%;
+    border-radius: 8px;
+    padding: 10px 0;
+  }
+  #speech {
+    width: 90%;
+    padding: 20px;
+  }
+  #speech h1 {
+    font-size: 32px;
+  }
+  #speech p {
+    font-size: 18px;
+  }
+  #speech #contact-home {
+    padding: 15px;
+    font-size: 18px;
+  }
+  .project-container, .experiences-container, .skill-container {
+    width: 90%;
+    margin: 10px auto;
+    padding: 10px;
+  }
+  .project-container .project-icon, .project-container .experiences-icon, .project-container .skill-icon, .experiences-container .project-icon, .experiences-container .experiences-icon, .experiences-container .skill-icon, .skill-container .project-icon, .skill-container .experiences-icon, .skill-container .skill-icon {
+    width: 50%;
+  }
+  .project-container .project-details h2, .project-container .skill-details h2, .experiences-container .project-details h2, .experiences-container .skill-details h2, .skill-container .project-details h2, .skill-container .skill-details h2 {
+    font-size: 24px;
+  }
+  .project-container .project-details p, .project-container .skill-details p, .experiences-container .project-details p, .experiences-container .skill-details p, .skill-container .project-details p, .skill-container .skill-details p {
+    font-size: 14px;
+  }
+  .project-container .project-link, .experiences-container .project-link, .skill-container .project-link {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+  .project-span, .skill-span {
+    width: 90%;
+  }
+  .more-project {
+    width: 90%;
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+  .contact-form-container, .login-form-container {
+    width: 90%;
+    margin: 20px auto;
+    padding: 10px;
+  }
+  .contact-form-container .contact-form .form-group label, .contact-form-container .login-form .form-group label, .login-form-container .contact-form .form-group label, .login-form-container .login-form .form-group label {
+    font-size: 14px;
+  }
+  .contact-form-container .contact-form .form-group input, .contact-form-container .contact-form .form-group select, .contact-form-container .login-form .form-group input, .contact-form-container .login-form .form-group select, .login-form-container .contact-form .form-group input, .login-form-container .contact-form .form-group select, .login-form-container .login-form .form-group input, .login-form-container .login-form .form-group select {
+    padding: 8px;
+    font-size: 14px;
+  }
+  .contact-form-container .contact-form button, .contact-form-container .login-form button, .login-form-container .contact-form button, .login-form-container .login-form button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+  #dashboard-container {
+    width: 90%;
+    margin-top: 100px;
+    padding: 10px;
+  }
+  #dashboard-container #menu-bar a {
+    padding: 6px;
+    font-size: 16px;
+  }
+  .dash-table {
+    width: 100%;
+  }
+  .dash-table th, .dash-table td {
+    padding: 4px;
+    font-size: 14px;
+  }
+  .dash-form {
+    width: 90%;
+    padding: 10px;
+  }
+  .dash-form input, .dash-form .textarea {
+    padding: 8px;
+    font-size: 14px;
+  }
+  .dash-form button {
+    padding: 8px;
+    font-size: 14px;
+  }
+}
+@media (max-width: 480px) {
+  #menu-container {
+    padding: 10px 0;
+  }
+  #menu-container #logo {
+    font-size: 20px;
+  }
+  #menu-container #menu-bar a {
+    font-size: 14px;
+  }
+  #speech {
+    width: 100%;
+    padding: 10px;
+  }
+  #speech h1 {
+    font-size: 24px;
+  }
+  #speech p {
+    font-size: 16px;
+  }
+  #speech #contact-home {
+    padding: 10px;
+    font-size: 16px;
+  }
+  .project-container, .experiences-container, .skill-container {
+    width: 100%;
+    padding: 10px;
+  }
+  .project-container .project-icon, .project-container .experiences-icon, .project-container .skill-icon, .experiences-container .project-icon, .experiences-container .experiences-icon, .experiences-container .skill-icon, .skill-container .project-icon, .skill-container .experiences-icon, .skill-container .skill-icon {
+    width: 60%;
+  }
+  .project-container .project-details h2, .project-container .skill-details h2, .experiences-container .project-details h2, .experiences-container .skill-details h2, .skill-container .project-details h2, .skill-container .skill-details h2 {
+    font-size: 20px;
+  }
+  .project-container .project-details p, .project-container .skill-details p, .experiences-container .project-details p, .experiences-container .skill-details p, .skill-container .project-details p, .skill-container .skill-details p {
+    font-size: 12px;
+  }
+  .project-container .project-link, .experiences-container .project-link, .skill-container .project-link {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+  .more-project {
+    width: 100%;
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+  .contact-form-container, .login-form-container {
+    width: 100%;
+    padding: 10px;
+  }
+  .contact-form-container .contact-form .form-group label, .contact-form-container .login-form .form-group label, .login-form-container .contact-form .form-group label, .login-form-container .login-form .form-group label {
+    font-size: 12px;
+  }
+  .contact-form-container .contact-form .form-group input, .contact-form-container .contact-form .form-group select, .contact-form-container .login-form .form-group input, .contact-form-container .login-form .form-group select, .login-form-container .contact-form .form-group input, .login-form-container .contact-form .form-group select, .login-form-container .login-form .form-group input, .login-form-container .login-form .form-group select {
+    padding: 6px;
+    font-size: 12px;
+  }
+  .contact-form-container .contact-form button, .contact-form-container .login-form button, .login-form-container .contact-form button, .login-form-container .login-form button {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+  #dashboard-container {
+    width: 100%;
+    padding: 10px;
+  }
+  #dashboard-container #menu-bar a {
+    padding: 4px;
+    font-size: 14px;
+  }
+  .dash-table th, .dash-table td {
+    padding: 2px;
+    font-size: 12px;
+  }
+  .dash-form {
+    width: 100%;
+    padding: 10px;
+  }
+  .dash-form input, .dash-form .textarea {
+    padding: 6px;
+    font-size: 12px;
+  }
+  .dash-form button {
+    padding: 6px;
+    font-size: 12px;
+  }
 }/*# sourceMappingURL=style.css.map */
