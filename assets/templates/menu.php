@@ -14,7 +14,7 @@
 <script>
     // Script to handle header opacity on scroll / Script pour gérer l'opacité de l'en-tête au défilement
     window.onscroll = function() {
-        var header = document.querySelector('header');
+        const header = document.querySelector('header');
         if (window.scrollY > 180) {
             header.style.opacity = '0';
             header.style.transition = 'opacity 0.3s ease';

@@ -9,7 +9,7 @@ class ExpView {
         <h2 style="text-align: center; margin: 30px;">My Experiences</h2>';
         foreach ($exp as $e) {
             echo '
-            <div class="experiences-container">
+            <div class="experiences-container" role="figure" aria-label="Experience Information">
                 <img class="experiences-icon" src="' . $e['img_url'] . '" alt="Experience Image">
                 <div class="experiences-details">
                     <h3>' . $e['role'] . '</h3>

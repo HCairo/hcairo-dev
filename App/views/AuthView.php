@@ -5,15 +5,15 @@ class AuthView {
     // Méthode pour afficher le formulaire de connexion
     // Method to render the login form
     public function renderLoginForm() {
-        echo '<div class="login-form-container">
+        echo '<div class="login-form-container" role="form" aria-label="Admin Authentification">
             <h1>Login</h1>
             <form method="post" class="login-form">
-                <div class="form-group">
+                <div class="form-group" role="">
                     <label for="mail">Email</label> <!-- Champ pour l\'adresse email -->
                     <!-- Field for email address -->
                     <input type="email" name="mail" id="mail" required>
                 </div>
-                <div class="form-group">
+                <div class="form-group" role="">
                     <label for="secret_phrase">Secret Phrase</label> <!-- Champ pour la phrase secrète -->
                     <!-- Field for secret phrase -->
                     <input type="password" name="secret" id="secret" required>

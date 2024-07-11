@@ -9,7 +9,7 @@ class ProjectsView {
         <h2 style="text-align: center; margin: 30px;">Projects overview</h2>'; // Display a heading for projects overview / Affiche un titre pour l'aperçu des projets
         foreach ($pro as $p) {
             echo '
-            <div class="project-container">
+            <div class="project-container" role="figure" aria-label="Projects Information">
                 <img class="project-icon" src="' . $p['img_url'] . '" alt="Project Image">
                 <div class="project-details">
                     <h2>' . $p['name'] . '</h2>

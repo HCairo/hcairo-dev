@@ -5,7 +5,7 @@ class ContactView {
     // Méthode pour initialiser le formulaire de contact
     // Method to initialize the contact form
     public function initForm() {
-        echo '<div class="contact-form-container">
+        echo '<div class="contact-form-container" role="form" aria-label="Contact information">
         <h1>Contact me</h1>
         <form method="post" class="contact-form">
             <div class="form-group">
@@ -18,7 +18,7 @@ class ContactView {
                 <!-- Field for last name -->
                 <input type="text" name="lastname" id="lastname" required>
             </div>
-            <div class="form-group">
+            <div class="form-group" >
                 <label for="mail">Mail</label> <!-- Champ pour l\'adresse email -->
                 <!-- Field for email address -->
                 <input type="email" name="mail" id="mail" required>

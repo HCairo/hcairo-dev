@@ -9,7 +9,7 @@ class SkillsView {
         <h2 style="text-align: center; margin: 30px;">Skills overview</h2>'; // Display a heading for skills overview / Affiche un titre pour l'aperçu des compétences
         foreach ($skill as $s) {
             echo '
-            <div class="skill-container">
+            <div class="skill-container" role="figure" aria-label="Skills Information">
                 <img class="skill-icon" src="' . $s['img_url'] . '" alt="Project Image">
                 <div class="skill-details">
                     <h2>' . $s['name'] . '</h2>

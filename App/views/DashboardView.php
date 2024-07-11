@@ -5,7 +5,7 @@ class DashboardView {
     // Displays the dashboard menu
     // Affiche le menu du tableau de bord
     public function dashboardMenu() {
-        echo '<div id="dashboard-container">
+        echo '<div id="dashboard-container" role="menu" aria-label="Dashboard Menu">
                 <nav id="menu-bar">
                     <a href="?action=dashboard&sub=dash_projects">Projects</a>
                     <a href="?action=dashboard&sub=dash_exp">Experiences</a>
