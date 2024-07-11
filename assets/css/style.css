@@ -523,11 +523,11 @@ textarea {
     font-size: 24px;
   }
   .project-container .project-details p, .project-container .skill-details p, .experiences-container .project-details p, .experiences-container .skill-details p, .skill-container .project-details p, .skill-container .skill-details p {
-    font-size: 14px;
+    font-size: 18px;
   }
   .project-container .project-link, .experiences-container .project-link, .skill-container .project-link {
     padding: 8px 16px;
-    font-size: 14px;
+    font-size: 16px;
   }
   .project-span, .skill-span {
     width: 90%;
@@ -543,15 +543,15 @@ textarea {
     padding: 10px;
   }
   .contact-form-container .contact-form .form-group label, .contact-form-container .login-form .form-group label, .login-form-container .contact-form .form-group label, .login-form-container .login-form .form-group label {
-    font-size: 14px;
+    font-size: 16px;
   }
   .contact-form-container .contact-form .form-group input, .contact-form-container .contact-form .form-group select, .contact-form-container .login-form .form-group input, .contact-form-container .login-form .form-group select, .login-form-container .contact-form .form-group input, .login-form-container .contact-form .form-group select, .login-form-container .login-form .form-group input, .login-form-container .login-form .form-group select {
     padding: 8px;
-    font-size: 14px;
+    font-size: 16px;
   }
   .contact-form-container .contact-form button, .contact-form-container .login-form button, .login-form-container .contact-form button, .login-form-container .login-form button {
     padding: 8px 16px;
-    font-size: 14px;
+    font-size: 16px;
   }
   #dashboard-container {
     width: 90%;
@@ -567,7 +567,7 @@ textarea {
   }
   .dash-table th, .dash-table td {
     padding: 4px;
-    font-size: 14px;
+    font-size: 16px;
   }
   .dash-form {
     width: 90%;
@@ -575,11 +575,11 @@ textarea {
   }
   .dash-form input, .dash-form .textarea {
     padding: 8px;
-    font-size: 14px;
+    font-size: 16px;
   }
   .dash-form button {
     padding: 8px;
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 @media (max-width: 480px) {
@@ -590,7 +590,7 @@ textarea {
     font-size: 20px;
   }
   #menu-container #menu-bar a {
-    font-size: 14px;
+    font-size: 16px;
   }
   #speech {
     width: 100%;
@@ -600,7 +600,7 @@ textarea {
     font-size: 24px;
   }
   #speech p {
-    font-size: 16px;
+    font-size: 20px;
   }
   #speech #contact-home {
     padding: 10px;
@@ -617,7 +617,7 @@ textarea {
     font-size: 20px;
   }
   .project-container .project-details p, .project-container .skill-details p, .experiences-container .project-details p, .experiences-container .skill-details p, .skill-container .project-details p, .skill-container .skill-details p {
-    font-size: 12px;
+    font-size: 18px;
   }
   .project-container .project-link, .experiences-container .project-link, .skill-container .project-link {
     padding: 6px 12px;
@@ -633,15 +633,15 @@ textarea {
     padding: 10px;
   }
   .contact-form-container .contact-form .form-group label, .contact-form-container .login-form .form-group label, .login-form-container .contact-form .form-group label, .login-form-container .login-form .form-group label {
-    font-size: 12px;
+    font-size: 14px;
   }
   .contact-form-container .contact-form .form-group input, .contact-form-container .contact-form .form-group select, .contact-form-container .login-form .form-group input, .contact-form-container .login-form .form-group select, .login-form-container .contact-form .form-group input, .login-form-container .contact-form .form-group select, .login-form-container .login-form .form-group input, .login-form-container .login-form .form-group select {
     padding: 6px;
-    font-size: 12px;
+    font-size: 14px;
   }
   .contact-form-container .contact-form button, .contact-form-container .login-form button, .login-form-container .contact-form button, .login-form-container .login-form button {
     padding: 6px 12px;
-    font-size: 12px;
+    font-size: 14px;
   }
   #dashboard-container {
     width: 100%;
