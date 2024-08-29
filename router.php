@@ -56,4 +56,9 @@ switch ($action) {
         $controller = new DashboardController();
         $controller->dashboardManagement();
         break;
+    // Gérer les mentions légales / 
+    case 'legal':
+        $controller = new LegalController();
+        $controller->displayPage();
+        break;
 }

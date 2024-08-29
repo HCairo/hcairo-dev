@@ -8,6 +8,7 @@
             <a href="exp">Experiences</a> <!-- Link to experiences page / Lien vers la page Expériences -->
             <a href="skills">Skills</a> <!-- Link to skills page / Lien vers la page Compétences -->
             <a href="contact">Contact</a> <!-- Link to contact page / Lien vers la page Contact -->
+            <a href="legal">Legal</a> <!-- Link to legal page / Lien vers la page Mentions Legales -->
         </div>
 
         <!-- Footer section for social media links / Section du pied de page pour les liens vers les réseaux sociaux -->
