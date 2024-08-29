@@ -4,10 +4,11 @@ require_once('vendor/autoload.php');
 
 // Importer les classes nécessaires / Import necessary classes
 use Dotenv\Dotenv;
-use Controllers\HomeController;
-use Controllers\AuthController;
-use Controllers\SkillsController;
 use Controllers\ExpController;
+use Controllers\AuthController;
+use Controllers\HomeController;
+use Controllers\LegalController;
+use Controllers\SkillsController;
 use Controllers\ContactController;
 use Controllers\ProjectsController;
 use Controllers\DashboardController;

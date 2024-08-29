@@ -459,6 +459,43 @@ textarea {
   width: 100%;
 }
 
+.legal-container {
+  width: 60%;
+  margin: 40px auto;
+  background-color: #1E1E24;
+  color: #f4f3ee;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.legal-section {
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #2a2a32;
+  border-radius: 8px;
+}
+.legal-section h2 {
+  color: #9368B7;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.legal-section p, .legal-section ul {
+  font-size: 16px;
+  line-height: 1.6;
+}
+.legal-section ul {
+  margin-left: 20px;
+}
+.legal-section ul li {
+  margin-bottom: 5px;
+}
+
+hr {
+  border: none;
+  border-bottom: 1px solid #f4f3ee;
+  margin: 40px 0;
+}
+
 @media (max-width: 768px) {
   #menu-container {
     flex-direction: row;
