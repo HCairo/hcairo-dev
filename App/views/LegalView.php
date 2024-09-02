@@ -6,7 +6,7 @@ class LegalView {
     public function renderView() {
         ?>
             <div class="legal-container">
-                <h1>Mentions Légales</h1>
+                <h2>Mentions Légales</h2>
                 
                 <section class="section legal-section">
                     <h2>Identité du Propriétaire</h2>
@@ -51,9 +51,7 @@ class LegalView {
 
                 <hr>
 
-                <header>
-                    <h1>Politique de Confidentialité</h1>
-                </header>
+                <h2>Politique de Confidentialité</h2>
 
                 <section class="section legal-section">
                     <h2>Collecte de Données</h2>
