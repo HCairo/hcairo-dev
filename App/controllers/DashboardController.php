@@ -113,6 +113,11 @@ class DashboardController {
             case 'dash_answer_contact':
                 $this->sendMsgContact(); // Send a response to a contact message
                 break;
+            case 'dash_delete_contact':
+                $id = $_REQUEST['id'] ?? null;
+                $this->dashboard->deleteContactRequest($id);
+                break;
+
             case 'dash_out':
                 $this->logout(); // Logout user
                 break;
@@ -257,7 +262,6 @@ class DashboardController {
             }
         }
     }
-
     /**
      * Logout user and redirect to homepage.
      *

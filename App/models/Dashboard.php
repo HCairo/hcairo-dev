@@ -490,4 +490,11 @@ class Dashboard {
             }
         }
     }
+
+    public function deleteContactRequest($id) {
+        $pdo = $this->db->getConnection()->prepare('DELETE FROM contact WHERE id = ?');
+        $pdo->execute([$id]);
+        header('Location: ?action=dashboard&sub=dash_contact');
+        exit();
+    }
 }

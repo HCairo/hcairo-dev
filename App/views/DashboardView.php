@@ -90,7 +90,7 @@ class DashboardView {
             <div class="form-group">
                 <label for="img_url">Image</label>
                 <input type="file" name="img_url" id="img_url">
-                <p> Current path to image : ' . htmlspecialchars($project['img_url']) . '<p>
+                <img class="dash-block-icon" src="' . htmlspecialchars($project['img_url']) . '" alt="Project Image" width="150">
             </div>
             <div class="form-group">
                 <label for="name">Name</label>
@@ -192,7 +192,7 @@ class DashboardView {
             <div class="form-group">
                 <label for="img_url">Image</label>
                 <input type="file" name="img_url" id="img_url">
-                <p> Current path to image : ' . htmlspecialchars($experience['img_url']) . '<p>
+                <img class="dash-block-icon" src="' . htmlspecialchars($experience['img_url']) . '" alt="Company Image" width="150">
             </div>
             <div class="form-group">
                 <label for="company">Company</label>
@@ -284,7 +284,7 @@ class DashboardView {
             <div class="form-group">
                 <label for="img_url">Image</label>
                 <input type="file" name="img_url" id="img_url">
-                <p> Current path to image : ' . htmlspecialchars($skill['img_url']) . '<p>
+                <img class="dash-block-icon" src="' . htmlspecialchars($skill['img_url']) . '" alt="Skill Image" width="150">
             </div>
             <div class="form-group">
                 <label for="name">Name</label>
@@ -333,7 +333,8 @@ class DashboardView {
                 <td>' . htmlspecialchars($c['received']) . '</td>
                 <td>
                     <a href="?action=dashboard&sub=dash_confirm_contact&id=' . htmlspecialchars($c['id']) . '">Confirm reception</a> | 
-                    <a href="?action=dashboard&sub=dash_answer_contact&id=' . htmlspecialchars($c['id']) . '">Answer to user</a>
+                    <a href="?action=dashboard&sub=dash_answer_contact&id=' . htmlspecialchars($c['id']) . '">Answer to user</a> |
+                    <a href="?action=dashboard&sub=dash_delete_contact&id=' . htmlspecialchars($c['id']) . '">Delete contact request</a>
                 </td>
             </tr>';
         }
