@@ -270,7 +270,7 @@ class DashboardController {
     public function logout() {
         session_unset(); // Supprime toutes les variables de session
         session_destroy(); // Détruit la session
-        header('Location: http://localhost/hcairo@dev/'); // Redirige vers la page d'accueil
+        header('Location: hcairodev.com'); // Redirige vers la page d'accueil
         exit();
     }
 }

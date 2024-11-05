@@ -54,7 +54,7 @@ class Contact {
                 // Demande de contact créée avec succès
             }
 
-            header('Location: http://localhost/hcairo@dev/'); // Redirect to a desired location
+            header('Location: hcairodev.com'); // Redirect to a desired location
             // Redirection vers l'emplacement souhaité
             exit();
         } catch (\PDOException $e) {

@@ -59,7 +59,7 @@ class Dashboard {
             // Move uploaded file to designated directory
             if (move_uploaded_file($_FILES['img_url']['tmp_name'], $uploadFile)) {
                 // File uploaded successfully, now store its URL in the database
-                $imgUrl = 'http://localhost/hcairo@dev/' . $uploadDir . basename($_FILES['img_url']['name']); // Adjust URL as per your server setup
+                $imgUrl = 'hcairodev.com' . $uploadDir . basename($_FILES['img_url']['name']); // Adjust URL as per your server setup
             } else {
                 // Error in file upload
                 echo "File upload failed.";
@@ -96,7 +96,7 @@ class Dashboard {
             // Move uploaded file to designated directory
             if (move_uploaded_file($_FILES['img_url']['tmp_name'], $uploadFile)) {
                 // File uploaded successfully, now store its URL in the database
-                $imgUrl = 'http://localhost/hcairo@dev/' . $uploadFile; // Adjust URL as per your server setup
+                $imgUrl = 'http://hcairodev.com/' . $uploadFile; // Adjust URL as per your server setup
             } else {
                 // Error in file upload
                 echo "File upload failed.";
@@ -167,7 +167,7 @@ class Dashboard {
             // Move uploaded file to designated directory
             if (move_uploaded_file($_FILES['img_url']['tmp_name'], $uploadFile)) {
                 // File uploaded successfully, now store its URL in the database
-                $imgUrl = 'http://localhost/hcairo@dev/' . $uploadDir . basename($_FILES['img_url']['name']); // Adjust URL as per your server setup
+                $imgUrl = 'hcairodev.com' . $uploadDir . basename($_FILES['img_url']['name']); // Adjust URL as per your server setup
             } else {
                 // Error in file upload
                 echo "File upload failed.";
@@ -205,7 +205,7 @@ class Dashboard {
             // Move uploaded file to designated directory
             if (move_uploaded_file($_FILES['img_url']['tmp_name'], $uploadFile)) {
                 // File uploaded successfully, now store its URL in the database
-                $imgUrl = 'http://localhost/hcairo@dev/' . $uploadFile; // Adjust URL as per your server setup
+                $imgUrl = 'hcairodev.com' . $uploadFile; // Adjust URL as per your server setup
             } else {
                 // Error in file upload
                 echo "File upload failed.";
@@ -275,7 +275,7 @@ class Dashboard {
             // Move uploaded file to designated directory
             if (move_uploaded_file($_FILES['img_url']['tmp_name'], $uploadFile)) {
                 // File uploaded successfully, now store its URL in the database
-                $imgUrl = 'http://localhost/hcairo@dev/' . $uploadDir . basename($_FILES['img_url']['name']); // Adjust URL as per your server setup
+                $imgUrl = 'hcairodev.com' . $uploadDir . basename($_FILES['img_url']['name']); // Adjust URL as per your server setup
             } else {
                 // Error in file upload
                 echo "File upload failed.";
@@ -310,7 +310,7 @@ class Dashboard {
             // Move uploaded file to designated directory
             if (move_uploaded_file($_FILES['img_url']['tmp_name'], $uploadFile)) {
                 // File uploaded successfully, now store its URL in the database
-                $imgUrl = 'http://localhost/hcairo@dev/' . $uploadFile; // Adjust URL as per your server setup
+                $imgUrl = 'hcairodev.com' . $uploadFile; // Adjust URL as per your server setup
             } else {
                 // Error in file upload
                 echo "File upload failed.";
