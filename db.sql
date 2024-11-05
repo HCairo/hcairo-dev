@@ -74,6 +74,15 @@ INSERT INTO admin (mail, secret) VALUES ('hcairo@dev', '$argon2i$v=19$m=16,t=2,p
 -- Insérer des données dans la table 'contact'
 INSERT INTO contact (firstname, lastname, mail, phone) VALUES ('Joe', 'Mister', 'joe@mister.com', '07 29 40 39 26');
 
+INSERT INTO `skills` (`id`, `name`, `img_url`, `level`) VALUES
+(1, 'PHP', 'http://localhost/hcairo@dev/assets/img/skills/php.png', 'Good'),
+(2, 'Javascript', 'http://localhost/hcairo@dev/assets/img/skills/js.png', 'Good'),
+(3, 'React', 'http://localhost/hcairo@dev/assets/img/skills/react.png', 'Decent'),
+(4, 'MySQL', 'http://localhost/hcairo@dev/assets/img/skills/sql.png', 'Good'),
+(5, 'Svelte', 'http://localhost/hcairo@dev/assets/img/skills/svelte.png', 'Decent'),
+(6, 'Symfony', 'http://localhost/hcairo@dev/assets/img/skills/symfony.png', 'Decent'),
+(7, 'Firebase', 'http://localhost/hcairo@dev/assets/img/skills/firebase.png', 'Decent');
+
 -- Insert data into 'experiences' table
 -- Insérer des données dans la table 'experiences'
 INSERT INTO experiences (id, company, img_url, role, description, start_date, end_date) VALUES
@@ -81,7 +90,9 @@ INSERT INTO experiences (id, company, img_url, role, description, start_date, en
 
 -- Insert data into 'projects' table
 -- Insérer des données dans la table 'projects'
-INSERT INTO projects (id, name, img_url, description, technology, link) VALUES
-(1, 'NowTes', './assets/img/projects/icon.png', 'Note-taking and task management application.\r\n\r\nDeveloped as part of my Web & Mobile Developer training for my certification.', 'PHP, MYSQL, JS, SCSS, ...', 'http://localhost/project-nowtes'),
-(2, 'Eshop - CCI', './assets/img/projects/eshop.png', 'Eshop project created during courses at the CCI Nord Isère.\r\nIntroduction to the MVC model in vanilla PHP.', 'PHP, JS, SCSS', 'http://localhost/E-Commerce-MVC'),
-(3, 'ASCII Converter', './assets/img/projects/asciilogo.png', 'Image to ASCII conversion application.\r\nFirst project in Python.', 'Python, Ext. Python, HTML, CSS.', '#');
+INSERT INTO `projects` (`id`, `name`, `img_url`, `description`, `technology`, `link`) VALUES
+(1, 'NowTes', 'http://localhost/hcairo@dev/assets/img/projects/icon.png', 'Note-taking and task management application.  Developed as part of my Web &amp; Mobile Developer training for my certification.', 'PHP, MYSQL, JS, SCSS, ...', 'https://github.com/HCairo/project-nowtes'),
+(2, 'Eshop - CCI', './assets/img/projects/eshop.png', 'Eshop project created during courses at the CCI Nord Isere. Introduction to the MVC model in vanilla PHP.', 'PHP, JS, SCSS', 'https://github.com/Essenere602/E-Commerce-MVC'),
+(3, 'ASCII Converter', './assets/img/projects/asciilogo.png', 'Image to ASCII conversion application.First project in Python.', 'Python, Ext. Python, HTML, CSS.', 'https://github.com/HCairo/asciiverter'),
+(4, 'PocketChat', 'http://localhost/hcairo@dev/assets/img/projects/pocketchat.png', 'Local chat app created with Svelte Framework and Pocketbase DB. ', 'Svelte, PocketBase, Vite', 'https://github.com/HCairo/pocketchat'),
+(5, 'FreshFood', 'http://localhost/hcairo@dev/assets/img/projects/freshfood.png', 'Mobile application designed to help Muslim communities easily find and purchase fresh, halal-certified products. ', 'Flutter, PHP, MYSQL, ...', 'https://github.com/HCairo/freshfood');
