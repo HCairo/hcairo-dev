@@ -14,7 +14,7 @@
         <!-- Footer section for social media links / Section du pied de page pour les liens vers les réseaux sociaux -->
         <div class="footer-section">
             <h3>Follow Me</h3> <!-- Heading for social media links / En-tête pour les liens vers les réseaux sociaux -->
-            <a href="https://twitter.com/HCairo" target="_blank">Twitter / X</a> <!-- Twitter link / Lien Twitter -->
+            <a href="https://twitter.com" target="_blank">Twitter / X</a> <!-- Twitter link / Lien Twitter -->
             <a href="https://linkedin.com/in/hugocairo" target="_blank">LinkedIn</a> <!-- LinkedIn link / Lien LinkedIn -->
             <a href="https://github.com/HCairo" target="_blank">GitHub</a> <!-- GitHub link / Lien GitHub -->
         </div>

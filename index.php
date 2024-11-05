@@ -1,9 +1,9 @@
 <?php
 // Enable displaying errors for debugging
 // Activer l'affichage des erreurs pour le débogage
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
+// ini_set('display_errors', 1);
+// ini_set('display_startup_errors', 1);
+// error_reporting(E_ALL);
 
 // Start a new session or resume the existing session
 // Démarrer une nouvelle session ou reprendre la session existante

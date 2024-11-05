@@ -53,7 +53,7 @@ class AuthController {
             } else {
                 // Display error message and render login form again
                 // Affiche un message d'erreur et rend à nouveau le formulaire de connexion
-                $this->authView->displayMessage("Phrase secrète invalide. Veuillez réessayer.");
+                $this->authView->displayMessage("Adresse mail ou phrase secrète invalide. Veuillez réessayer.");
                 $this->authView->renderLoginForm();
             }
         } else {
