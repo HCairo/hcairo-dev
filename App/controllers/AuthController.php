@@ -44,11 +44,7 @@ class AuthController {
 
                 // Redirect to dashboard after a delay
                 // Redirige vers le tableau de bord après un délai
-                echo '<script>
-                    setTimeout(function() {
-                        window.location.href = "dashboard";
-                    }, 3000);
-                </script>';
+                echo '<script src="' . JS . 'timeOut.js"></script>';
                 exit();
             } else {
                 // Display error message and render login form again
